@@ -106,6 +106,8 @@ PHP_FUNCTION(myConcat)
 }
 /* }}} */
 
+/* {{{ proto string phpStartupAndShutdown(string arg)
+    */
 PHP_FUNCTION(phpStartupAndShutdown)
 {
 	char *arg = NULL;
@@ -120,6 +122,7 @@ PHP_FUNCTION(phpStartupAndShutdown)
 
 	RETURN_STR(strg);
 }
+/* }}} */
 
 /* {{{ php_myfunctions_init_globals
  */

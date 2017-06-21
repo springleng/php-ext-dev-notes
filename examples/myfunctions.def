@@ -1,1 +1,3 @@
-string self_concat(string str, int n)
+string helloWorld(string arg)
+string myConcat(string str, int n)
+string phpStartupAndShutdown(string arg)
