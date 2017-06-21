@@ -27,9 +27,8 @@
 #include "ext/standard/info.h"
 #include "php_myfunctions.h"
 
-/* If you declare any globals in php_myfunctions.h uncomment this:
+/* If you declare any globals in php_myfunctions.h uncomment this: */
 ZEND_DECLARE_MODULE_GLOBALS(myfunctions)
-*/
 
 /* True global resources - no need for thread safety here */
 static int le_myfunctions;
@@ -39,12 +38,11 @@ int time_of_rinit;
 
 /* {{{ PHP_INI
  */
-/* Remove comments and fill if you need to have entries in php.ini
+/* Remove comments and fill if you need to have entries in php.ini */
 PHP_INI_BEGIN()
     STD_PHP_INI_ENTRY("myfunctions.global_value",      "42", PHP_INI_ALL, OnUpdateLong, global_value, zend_myfunctions_globals, myfunctions_globals)
     STD_PHP_INI_ENTRY("myfunctions.global_string", "foobar", PHP_INI_ALL, OnUpdateString, global_string, zend_myfunctions_globals, myfunctions_globals)
 PHP_INI_END()
-*/
 /* }}} */
 
 /* Remove the following function when you have successfully modified config.m4
@@ -126,13 +124,12 @@ PHP_FUNCTION(phpStartupAndShutdown)
 
 /* {{{ php_myfunctions_init_globals
  */
-/* Uncomment this function if you have INI entries
+/* Uncomment this function if you have INI entries */
 static void php_myfunctions_init_globals(zend_myfunctions_globals *myfunctions_globals)
 {
 	myfunctions_globals->global_value = 0;
 	myfunctions_globals->global_string = NULL;
 }
-*/
 /* }}} */
 
 /* {{{ PHP_MINIT_FUNCTION
@@ -192,6 +189,7 @@ PHP_MINFO_FUNCTION(myfunctions)
 {
 	php_info_print_table_start();
 	php_info_print_table_header(2, "myfunctions support", "enabled");
+	php_info_print_table_row(2, "version", PHP_MYFUNCTIONS_VERSION);
 	php_info_print_table_row(2, "author", "silen <silence.lc@gmail.com>");
 	php_info_print_table_end();
 
