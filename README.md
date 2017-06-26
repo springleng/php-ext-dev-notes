@@ -6,7 +6,7 @@ http://www.cunmou.com/phpbook/index.md
 and
 https://github.com/pangudashu/php7-internal
 
-1、使用 ext_skel 脚本创建扩展
+###1、使用 ext_skel 脚本创建扩展
 
 ```
 cd php-7.1.x/ext
