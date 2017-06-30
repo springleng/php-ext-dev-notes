@@ -10,6 +10,8 @@
 [PHP扩展开发及内核应用 @walu](http://www.cunmou.com/phpbook/index.md)
 ,
 [PHP扩展开发笔记 @Leon2012](https://github.com/Leon2012/php-ext)
+,
+[PHP Internals Book](http://www.phpinternalsbook.com/index.html)
 
 ##### 1、使用 ext_skel 脚本创建扩展
 
